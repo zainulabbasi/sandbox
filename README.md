@@ -1,9 +1,9 @@
 # sandbox
 This is a sandbox repository for playing with git. 
 
-# Git cheatsheet
+# Git Cheat Sheet
 ## Installing git
-To install git on your machine visit - https://git-scm.com/downloads and select the platform of your choice.
+To install git on your machine visit - [official git website](https://git-scm.com/downloads) and select the platform of your choice.
 
 ## Configuration
 **$ git config --global user.name "\[name\]"**
@@ -52,7 +52,7 @@ Review and commit changes
 
 > Records the changes permanently in version history.
 
-## Branching and merging
+## Branching and Merging
 
 **$ git branch**
 
@@ -74,6 +74,58 @@ Review and commit changes
 **$ git branch -d \[branch-name\]**
 
 > Deletes the specified branch
+
+## Refactoring Filenames
+
+**$ git rm \[file\]**
+
+> Deletes the file from the working directory and stages the deletion
+
+**$ git rm --cached \[file\]**
+
+> Deletes the file from version control and stages deletiong but preserves the file locally
+
+**$ git mv \[file-original\] \[file-renamed\]**
+
+> Changes the file name and stages the changes for commit
+
+## Review History
+
+**$ git log**
+
+> Lists version history for the current branch
+
+**$ git show \[commit\]**
+
+> Shows the changes made for the specified commit
+
+## Synchronize Changes
+
+**$ git fetch [remote]**
+
+> Downloads all history from the remote repository
+
+**$ git push [remote] [branch]**
+
+> Uploads all local commits to remote
+
+**$ git pull**
+
+> Downloads history from remote repository and incorporates changes into local repository
+
+## Ignoring Files
+Exclude files and paths
+
+A text file name `.gitignore`avoids accidental versioning of files and paths matching the specified pattern. 
+
+For example consider a .gitignore file containing the following: 
+*.log
+build/
+
+In this case all files ending with .log and the build folder will be ignored by git. 
+
+## Detailed Documentation 
+For detailed documentation on git visit - [Git Documentation](https://git-scm.com/doc)
 
 
 
